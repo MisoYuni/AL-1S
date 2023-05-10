@@ -14,7 +14,9 @@ namespace Alice
         {
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console()
-                .WriteTo.File(Environment.GetEnvironmentVariable("dir_logs") ?? "logs/.log", rollingInterval: RollingInterval.Day)
+                .WriteTo.File(
+                    Environment.GetEnvironmentVariable("dir_logs") ?? "logs/.log",
+                    rollingInterval: RollingInterval.Day)
                 .CreateLogger();
 
             await Host.CreateDefaultBuilder()
