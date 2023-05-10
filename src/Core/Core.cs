@@ -15,7 +15,6 @@ namespace Alice.Core
         private readonly Microsoft.Extensions.Logging.ILogger _logger;
         private readonly IHostApplicationLifetime _applicationLifetime;
         private readonly DiscordClient _discordClient;
-
         private readonly SlashCommandsExtension _slashes;
 
         public AliceService(ILogger<AliceService> logger, IHostApplicationLifetime applicationLifetime)
