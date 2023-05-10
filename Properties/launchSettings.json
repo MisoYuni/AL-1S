@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "AL-1S": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "token": "MTA4ODAyMzg4MTg1NzY0MjQ5Ng.G7QRj3.k7Mz40UB7HmFl2Hgg7Gnii5BHgi-35QIxvsjFw"
+      }
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {
+        "token": "MTA4ODAyMzg4MTg1NzY0MjQ5Ng.G7QRj3.k7Mz40UB7HmFl2Hgg7Gnii5BHgi-35QIxvsjFw"
+      },
+      "distributionName": ""
+    }
+  }
+}
