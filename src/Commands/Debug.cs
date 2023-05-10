@@ -10,12 +10,13 @@ namespace Alice.Commands
     public class Debug : ApplicationCommandModule
     {
         [SlashCommand("ping", "Ping")]
-        public async Task Ping(InteractionContext ctx)
+        internal async Task Ping(InteractionContext ctx)
         {
-            Log.Information(string.Format("Author={0}, Command=\'Ping\'", ctx.Member.Id));
+            Log.Information($"Command: Author={ctx.Member.Id}, Command=\'Ping\'");
             await ctx.CreateResponseAsync(
                 InteractionResponseType.ChannelMessageWithSource,
-                new DiscordInteractionResponseBuilder().WithContent("Hi"));
+                new DiscordInteractionResponseBuilder()
+                .WithContent($"WebSocket: {ctx.Client.Ping}ms"));
         }
     }
 }
