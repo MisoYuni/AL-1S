@@ -6,14 +6,17 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 
+
 namespace Alice
 {
    public sealed class Program
    {
         public static async Task Main()
         {
+            // Initialise Logger
             Log.Logger = new LoggerConfiguration()
-                .WriteTo.Console()
+                .WriteTo.Console(outputTemplate:
+                    "[{Timestamp:HH:mm:ss.fff} {Level:u4}] {Message:lj}{NewLine}{Exception}")
                 .WriteTo.File(
                     Environment.GetEnvironmentVariable("dir_logs") ?? "logs/.log",
                     rollingInterval: RollingInterval.Day)
