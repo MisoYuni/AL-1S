@@ -18,7 +18,7 @@ namespace Alice
                 .WriteTo.Console(outputTemplate:
                     "[{Timestamp:HH:mm:ss.fff} {Level:u4}] {Message:lj}{NewLine}{Exception}")
                 .WriteTo.File(
-                    Environment.GetEnvironmentVariable("dir_logs") ?? "logs/.log",
+                    Environment.GetEnvironmentVariable("LOGS_DIR") ?? "logs/.log",
                     rollingInterval: RollingInterval.Day)
                 .CreateLogger();
 

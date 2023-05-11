@@ -23,7 +23,7 @@ namespace Alice.Core
             this._applicationLifetime = applicationLifetime;
             this._discordClient = new DiscordClient(new DiscordConfiguration()
             {
-                Token = Environment.GetEnvironmentVariable("token"),
+                Token = Environment.GetEnvironmentVariable("TOKEN"),
                 TokenType = TokenType.Bot,
                 Intents = DiscordIntents.AllUnprivileged | DiscordIntents.MessageContents,
                 
