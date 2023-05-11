@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\Components\" />
+    <Folder Include="Alice\Components\" />
   </ItemGroup>
 
 </Project>
