@@ -6,6 +6,7 @@ using DSharpPlus.SlashCommands;
 using DSharpPlus.SlashCommands.Attributes;
 using Serilog;
 
+
 namespace Alice.Commands
 {
     [SlashCommandGroup("moderation", "A group of commands for moderation purposes")]

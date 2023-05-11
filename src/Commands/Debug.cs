@@ -3,6 +3,7 @@
 using DSharpPlus.SlashCommands;
 using Serilog;
 
+
 namespace Alice.Commands
 {
     [SlashCommandGroup("debug", "A group of commands for debugging purposes")]
