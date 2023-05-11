@@ -29,7 +29,7 @@ namespace Alice.Core
                 
                 LoggerFactory = new LoggerFactory().AddSerilog(),
                 MinimumLogLevel = LogLevel.Information,
-                LogUnknownEvents = true
+                LogUnknownEvents = false
             });
 
             this._slashes = this._discordClient.UseSlashCommands();
