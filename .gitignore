@@ -366,3 +366,4 @@ FodyWeavers.xsd
 
 # Environment Variables
 *.env
+/AL-1S.sln
