@@ -1,5 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk;Microsoft.NET.Sdk.Publish">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
@@ -8,8 +7,8 @@
     <Nullable>enable</Nullable>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <Platforms>AnyCPU;ARM64</Platforms>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="DSharpPlus" Version="4.4.0" />
     <PackageReference Include="DSharpPlus.SlashCommands" Version="4.4.0" />
@@ -20,9 +19,7 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Alice\Components\" />
   </ItemGroup>
-
 </Project>
