@@ -25,7 +25,7 @@ namespace Alice.Core
             {
                 Token = Environment.GetEnvironmentVariable("TOKEN"),
                 TokenType = TokenType.Bot,
-                Intents = DiscordIntents.AllUnprivileged | DiscordIntents.MessageContents,
+                Intents = DiscordIntents.All,
                 
                 LoggerFactory = new LoggerFactory().AddSerilog(),
                 MinimumLogLevel = LogLevel.Information,
